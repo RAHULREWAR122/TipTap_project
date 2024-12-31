@@ -29,7 +29,7 @@ const MenuBar = ({ editor }) => {
         <button
           onClick={() => editor.chain().focus().toggleBold().run()}
           disabled={!editor.can().chain().focus().toggleBold().run()}
-          className={`p-2 text-xl rounded-full text-white ${
+          className={`p-2 text-sm rounded-full text-white ${
             editor.isActive("bold") ? "bg-blue-700" : "bg-blue-400"
           }`}
         >
@@ -37,14 +37,14 @@ const MenuBar = ({ editor }) => {
         </button>
         <button
           onClick={() => editor.chain().focus().setHardBreak().run()}
-          className={`p-2 text-xl rounded-full text-white hover:bg-blue-700 bg-blue-400`}
+          className={`p-2 text-sm rounded-full text-white hover:bg-blue-700 bg-blue-400`}
         >
           <TbArrowsExchange />
         </button>
         <button
           onClick={() => editor.chain().focus().toggleItalic().run()}
           disabled={!editor.can().chain().focus().toggleItalic().run()}
-          className={`p-2 text-xl rounded-full text-white ${
+          className={`p-2 text-sm rounded-full text-white ${
             editor.isActive("italic") ? "bg-blue-700" : "bg-blue-400"
           }`}
         >
@@ -54,7 +54,7 @@ const MenuBar = ({ editor }) => {
         <button
           onClick={() => editor.chain().focus().toggleStrike().run()}
           disabled={!editor.can().chain().focus().toggleStrike().run()}
-          className={`p-2 text-xl rounded-full text-white ${
+          className={`p-2 text-sm rounded-full text-white ${
             editor.isActive("strike") ? "bg-blue-700" : "bg-blue-400"
           }`}
         >
@@ -64,7 +64,7 @@ const MenuBar = ({ editor }) => {
         <button
           onClick={() => editor.chain().focus().toggleUnderline().run()}
           disabled={!editor.can().chain().focus().toggleUnderline().run()}
-          className={`p-2 text-xl rounded-full text-white ${
+          className={`p-2 text-sm rounded-full text-white ${
             editor.isActive("underline") ? "bg-blue-700" : "bg-blue-400"
           }`}
         >
@@ -73,7 +73,7 @@ const MenuBar = ({ editor }) => {
         <button
           onClick={() => editor.chain().focus().toggleCode().run()}
           disabled={!editor.can().chain().focus().toggleCode().run()}
-          className={`p-2 text-xl rounded-full text-white ${
+          className={`p-2 text-sm rounded-full text-white ${
             editor.isActive("code") ? "bg-blue-700" : "bg-blue-400"
           }`}
         >
@@ -82,7 +82,7 @@ const MenuBar = ({ editor }) => {
 
         <button
           onClick={() => editor.chain().focus().toggleBulletList().run()}
-          className={`p-2 text-xl rounded-full text-white ${
+          className={`p-2 text-sm rounded-full text-white ${
             editor.isActive("bulletList") ? "bg-blue-700" : "bg-blue-400"
           }`}
         >
@@ -90,7 +90,7 @@ const MenuBar = ({ editor }) => {
         </button>
         <button
           onClick={() => editor.chain().focus().toggleOrderedList().run()}
-          className={`p-2 text-xl rounded-full text-white ${
+          className={`p-2 text-sm rounded-full text-white ${
             editor.isActive("orderedList") ? "bg-blue-700" : "bg-blue-400"
           }`}
         >
@@ -98,7 +98,7 @@ const MenuBar = ({ editor }) => {
         </button>
         <button
           onClick={() => editor.chain().focus().toggleBlockquote().run()}
-          className={`p-2 text-xl rounded-full text-white ${
+          className={`p-2 text-sm rounded-full text-white ${
             editor.isActive("blockquote") ? "bg-blue-700" : "bg-blue-400"
           }`}
         >
@@ -110,14 +110,14 @@ const MenuBar = ({ editor }) => {
         <button
           onClick={() => editor.chain().focus().undo().run()}
           disabled={!editor.can().chain().focus().undo().run()}
-          className="p-2 text-xl rounded-full text-white bg-blue-400 hover:bg-blue-700"
+          className="p-2 text-sm rounded-full text-white bg-blue-400 hover:bg-blue-700"
         >
           <IoArrowBackOutline />
         </button>
         <button
           onClick={() => editor.chain().focus().redo().run()}
           disabled={!editor.can().chain().focus().redo().run()}
-          className="p-2 text-xl rounded-full text-white bg-blue-400 hover:bg-blue-700"
+          className="p-2 text-sm rounded-full text-white bg-blue-400 hover:bg-blue-700"
         >
           <IoArrowForward />
         </button>
