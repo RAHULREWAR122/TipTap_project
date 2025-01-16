@@ -1,15 +1,16 @@
-import TipTap from "./Components/TipTap";
 import { useState } from "react";
 import ShowEditorText from "./Components/ShowEditorText";
+import CustomEditor from "./Components/CustomEditor";
 
 function App() {
   const [desc, setDesc] = useState("");
-
+  const [darkMode, setDarkMode] = useState(false);
+  
   return (
     <div className="min-h-screen">
-      <TipTap setDesc={setDesc} />
-      <ShowEditorText desc={desc} />
-    </div>
+      <CustomEditor setDesc={setDesc} darkMode={darkMode} setDarkMode={setDarkMode}/>
+      <ShowEditorText desc={desc} darkMode={darkMode} /> 
+     </div>
   );
 }
 

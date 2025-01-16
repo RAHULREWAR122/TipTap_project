@@ -35,3 +35,9 @@ ul li{
   padding-left: 1rem;
   border-left: 3px solid #999999;
 }
+
+a{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
